@@ -9,8 +9,8 @@ namespace Employee_Wage_Computation_
             Console.WriteLine("----Welocome To Employee Wage Program----");
             Console.WriteLine("-----------------------------------------");
             EmployeeWage emp = new EmployeeWage();
-            emp.EmpPresent();
-           
+            emp.computeEmpWage();
+
         }
     }
 }

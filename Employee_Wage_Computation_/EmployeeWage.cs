@@ -13,8 +13,11 @@ namespace Employee_Wage_Computation_
         public const int NUM_OF_WORKING_DAYS = 20;
         public const int MAX_HOURS_IN_MONTH = 100;
 
-        public void EmpPresent()
+        public int computeEmpWage()
         {
+            Console.WriteLine("<----Welocome To Employee Wage Program---->");
+            Console.WriteLine("-------------------------------------------");
+
             //variable
             int empHrs = 0;
             int totalEmpHours = 0;
@@ -29,17 +32,17 @@ namespace Employee_Wage_Computation_
                 {
                     case IS_PART_TIME:
                         empHrs = 4;
-                        Console.WriteLine("when Employee is Working Part Time.");
+                        Console.WriteLine(" when Employee is Working Part Time.");
                         break;
 
                     case IS_FULL_TIME:
                         empHrs = 8;
-                        Console.WriteLine("when Employee is Working Full Time.");
+                        Console.WriteLine(" when Employee is Working Full Time.");
                         break;
 
                     default:
                         empHrs = 0;
-                        Console.WriteLine("when Employee is Absent");
+                        Console.WriteLine(" when Employee is Absent");
                         break;
                 }
                 totalEmpHours += empHrs;
@@ -47,6 +50,7 @@ namespace Employee_Wage_Computation_
             }
             int totalEmpWage = totalEmpHours * EMP_RATE_PER_HOUR;
             Console.WriteLine("Total Employee Wage :- " + totalEmpWage);
+            return totalEmpWage;
         }
     }
 }
