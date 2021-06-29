@@ -6,9 +6,11 @@ namespace Employee_Wage_Computation_
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("----Welocome To Employee Wage Program----");
+            Console.WriteLine("-----------------------------------------");
             EmployeeWage emp = new EmployeeWage();
             emp.EmpPresent();
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
