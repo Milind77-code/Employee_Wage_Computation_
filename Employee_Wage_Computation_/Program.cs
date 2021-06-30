@@ -8,9 +8,9 @@ namespace Employee_Wage_Computation_
         {
             Console.WriteLine("----Welocome To Employee Wage Program----");
             Console.WriteLine("-----------------------------------------");
-            EmployeeWage emp = new EmployeeWage();
-            emp.computeEmpWage();
-
+            EmployeeWage.computeEmpWage("DMart", 20, 2, 10);
+            Console.WriteLine("-----------------------------------------");
+            EmployeeWage.computeEmpWage("Reliance", 10, 4, 20);
         }
     }
 }
